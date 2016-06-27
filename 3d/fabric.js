@@ -5,7 +5,6 @@ $(window).load(function() {
 var FABRIC
 
 function initFabric() {
-  var preloader = Preloader();
 
   FABRIC = new WHS.World({
 
@@ -18,6 +17,15 @@ function initFabric() {
         y: 0,
         z: 100,
         x: 0
+      },
+
+      background: {
+        opacity: 0
+      },
+
+      renderer: {
+        alpha: true,
+        antialias: true
       }
 
   });
@@ -117,8 +125,6 @@ function initFabric() {
 
   initSphereAnimation()
   initFabricAnimation()
-
-  preloader.check();
 }
 
 

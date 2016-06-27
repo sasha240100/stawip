@@ -8,8 +8,6 @@ function initScene1() {
   var firstR = -rows/2 * dist;
   var firstC = -columns/2 * dist;
 
-  var preloader = Preloader();
-
   WORLD = new WHS.World({
 
       container: document.getElementById('scene1'),
@@ -88,8 +86,5 @@ function initScene1() {
   });
 
   WORLD.OrbitControls();
-
   WORLD.start();
-
-  preloader.check();
 }
