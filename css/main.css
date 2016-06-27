@@ -1,0 +1,100 @@
+
+
+
+
+
+
+
+/* GENERIC
+---------------------------------*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+
+  min-width: 100%;
+  min-height: 100%;
+
+  background: #1A2980;
+  background: -webkit-linear-gradient(to bottom right, #1A2980 , #26D0CE);
+  background: linear-gradient(to bottom right, #1A2980 , #26D0CE);
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
+
+
+/* MAIN SLIDESHOW
+---------------------------------*/
+
+#mainSlideshow {
+  height: 100vh;
+}
+
+.scene {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+
+
+
+/* FIRST SLIDE
+---------------------------------*/
+
+#slide1 .logoHolder {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+}
+
+#slide1 .logoHolder img {
+  width: 200px;
+  transform: translate(-50%, -50%) scale(.9);
+  position: absolute;
+}
+
+#slide1 .square {
+  box-sizing: border-box;
+  position: absolute;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  left: 0px;
+  top: 0px;
+  transform: translate(20px, 20px);
+  border: 2px solid #26D0CE;
+  z-index: 2;
+}
+
+#fabric {
+  box-sizing: border-box;
+  position: absolute;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  left: 0px;
+  top: 0px;
+  transform: translate(20px, 20px);
+  z-index: 1;
+  overflow: hidden;
+}
+
+#slide1 .text {
+  position: absolute;
+  bottom: 25%;
+  width: 100%;
+  padding: 0 15vw;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
